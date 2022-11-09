@@ -1,0 +1,77 @@
+@import './colours.scss';
+
+.form {
+  width: 100%;
+  padding: 20px;
+  flex: 1 0 100%;
+  transition: 0.35s transform ease-in-out;
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 48px;
+  }
+
+  .input {
+    width: 100%;
+    position: relative;
+    input {
+      display: flex;
+      align-items: center;
+      border: 2px solid $night;
+    }
+
+    &.error {
+      input {
+        border-color: red;
+      }
+    }
+  }
+
+  .button-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 12px;
+
+    button {
+      margin-bottom: 8px;
+    }
+
+    span {
+      left: 50%;
+      transform: translate(-50%, 100%);
+    }
+  }
+
+  .message {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+
+    color: red;
+    display: flex;
+    max-height: 0;
+    overflow: hidden;
+    font-size: 14px;
+    transition: 0.35s max-height ease-in-out;
+    &.show-message {
+      max-height: 100px;
+    }
+  }
+
+  &.success {
+    transform: translateX(-100%);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form {
+    padding: 48px;
+  }
+}
+

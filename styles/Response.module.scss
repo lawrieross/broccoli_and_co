@@ -1,0 +1,14 @@
+.response {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 0 100%;
+  padding: 20px;
+  .message {
+    margin-bottom: 48px;
+    p {
+      text-align: center;
+    }
+  }
+}

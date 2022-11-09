@@ -1,0 +1,44 @@
+@import './colours.scss';
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  transition: 0.35s opacity ease-in-out;
+  padding: 20px;
+
+  .container {
+    overflow: hidden;
+    max-width: 600px;
+    background-color: #fff;
+    border: 2px solid $night;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex: 1 1 200%;
+    transition: 0.35s all ease-in-out;
+    &.success {
+      transform: translateX(-100%);
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .popup {
+    .wrapper {
+      .success {
+        padding: 48px;
+      }
+    }
+  }
+}
+

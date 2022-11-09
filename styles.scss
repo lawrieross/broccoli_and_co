@@ -1,0 +1,74 @@
+@import './colours.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  color: $night;
+  min-height: 100%;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+}
+
+body, main, #__next {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+main {
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background-color: $green;
+  .title-container {
+    margin-bottom: 48px;
+    max-width: 600px;
+  }
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 12px;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+fieldset {
+  padding: 0;
+  width: 100%;
+  border: none;
+}
