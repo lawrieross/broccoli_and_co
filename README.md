@@ -8,6 +8,7 @@ After that, you should then be able to run your dev server with the following co
 ```
 npm run dev
 ```
+It should now be running on http://localhost:3000
 
 # Running e2e tests
 Cypress has been configured such that you can run an end-to-end test in the application. Assuming the dev server is running, simply run the command:
