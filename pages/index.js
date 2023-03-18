@@ -17,11 +17,7 @@ function HomePage() {
     }
   }, [isPopupOpen])
 
-  const Overlay = () => {
-    if (isPopupOpen) {
-      return <Popup togglePopup={togglePopup} />
-    }
-  }
+  const Overlay = () => isPopupOpen && <Popup togglePopup={togglePopup} />
 
   return (
     <>
